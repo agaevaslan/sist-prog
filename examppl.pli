@@ -1,6 +1,6 @@
-EXAMP: PROC OPTIONS (MAIN);
-        DCL A BIN FIXED (31) INIT ( 11B );
-        DCL B BIN FIXED (31) INIT ( 100B );
-        DCL C BIN FIXED (31) INIT ( 101B );
-        DCL D BIN FIXED (31);D = A + B - C;
-    END EXAMP;                                                                      
+EX07: PROC  OPTIONS  ( MAIN );
+  DCL A BIT  ( 3 )  INIT  ( ‘10’B );
+  DCL B BIT  ( 3 )  INIT  ( ‘101’B );
+  DCL C BIT  ( 16 );
+  C = SUBSTR  ( ( B !! A ), 2, 3 );
+ END  EX07;
